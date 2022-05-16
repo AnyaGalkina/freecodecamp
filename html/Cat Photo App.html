@@ -2,7 +2,34 @@
 <html>
 
 <head>
-  <title>Cat Photo App/title>
+  <title>Cat Photo App/title></title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <style>
+    /* .red-text {
+        color: red;
+      } */
+
+    h2 {
+      font-family: Lobster, Helvetica;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: monospace;
+    }
+
+    .thick-green-border {
+      border-color: green;
+      border-width: 10px;
+      border-style: solid;
+      border-radius: 10px;
+    }
+
+    .smaller-image {
+      width: 100px;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -11,7 +38,8 @@
   <main>
     <p>Click here to view more <a href="#">cat photos</a>.</p>
 
-    <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+    <a href="#"><img class="smaller-image thick-green-border"
+        src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
         alt="A cute orange cat lying on its back."></a>
 
     <div>
@@ -38,7 +66,6 @@
         <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor" />
         Outdoor
       </label>
-      
       <label for="energetic">
         <input id="energetic" value="energetic" type="checkbox" name="persnality" checked />
         Energetic
@@ -53,7 +80,7 @@
       </label>
 
       <input type="text" placeholder="cat photo URL" required>
-      
+
       <button type="submit">Submit</button>
     </form>
   </main>
