@@ -14,37 +14,46 @@
     <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
         alt="A cute orange cat lying on its back."></a>
 
-    <p>Things cats love:</p>
-    <ul>
-      <li>milk</li>
-      <li>catch a mouse</li>
-      <li>sleep</li>
-    </ul>
-    <p>Top 3 things cats hate:</p>
-    <ol>
-      <li>swim</li>
-      <li>dogs</li>
-      <li>other cats</li>
-    </ol>
+    <div>
+      <p>Things cats love:</p>
+      <ul>
+        <li>milk</li>
+        <li>catch a mouse</li>
+        <li>sleep</li>
+      </ul>
+      <p>Top 3 things cats hate:</p>
+      <ol>
+        <li>swim</li>
+        <li>dogs</li>
+        <li>other cats</li>
+      </ol>
+    </div>
+
     <form action="https://www.freecatphotoapp.com/submit-cat-photo">
       <label for="indoor">
-        <input id="indoor" type="radio" name="indoor-outdoor"/>
+        <input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked />
         Indoor
-        </label>
+      </label>
       <label for="outdoor">
-        <input id="outdoor" type="radio" name="indoor-outdoor"/>
+        <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor" />
         Outdoor
-        </label>
+      </label>
+      
+      <label for="energetic">
+        <input id="energetic" value="energetic" type="checkbox" name="persnality" checked />
+        Energetic
+      </label>
       <label for="lazy">
-        <input id="lazy" type="checkbox" name="persnality"/>Lazy
+        <input id="lazy" value="lazy" type="checkbox" name="persnality" />
+        Lazy
       </label>
       <label for="funny">
-        <input id="funny" type="checkbox" name="persnality"/>Funny
+        <input id="funny" value="funny" type="checkbox" name="persnality" />
+        Funny
       </label>
-      <label for="energetic">
-        <input id="energetic" type="checkbox" name="persnality"/>Energetic
-      </label>
-      <input type="text" placeholder="cat photo URL">
+
+      <input type="text" placeholder="cat photo URL" required>
+      
       <button type="submit">Submit</button>
     </form>
   </main>
